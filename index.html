@@ -1,0 +1,27 @@
+<h1>Iframe overflow scrolling with <code>position: fixed;</code></h1>
+<p>This demo includes cross-browser samples of <code>iframe</code> elements that have <code>position: fixed</code> (ie. overlay modal with iframe content) and has scrollable contents <em>(iframe's content height is larger than the parent document height)</em>.</p>
+
+<p>For most browser this is a no-brainer, but iOS Safari does not simply render iframe's overflow - it renders iframe's overflow as <code>visible</code> without possibility to change it and the scroll events are bubbled under the iframe, to the document body usually, which is something you usually don't desire.</p>
+
+<p>This code solves issues mentioned above and works almost identically for following browsers:</p>
+
+<h3>Desktop</h3>
+<ul>
+	<li>Chrome 51.0.2704.84</li>
+	<li>Firefox 47.0</li>
+	<li>Safari 9.1 (11601.5.17.1)</li>
+</ul>
+<h3>Mobile</h3>
+<ul>
+	<li>iOS Safari 9.3 (13E230)</li>
+	<li>Chrome 50.0.266.89</li>
+</ul>
+
+<small>(No IE yet)</small>
+
+<h2>Demos</h2>
+<ul>
+<li><a href="01-fullscreen.html">Fullscreen iframe overlay with position: fixed + defined iframe's height</a></li>
+<li><a href="02-fullscreen-no-height.html">Fullscreen iframe overlay with position: fixed + undefined iframe's height</a></li>
+<li><a href="03-infiniscroll.html">Fullscreen iframe overlay with position: fixed + infinite scroll</a></li>
+</ul>

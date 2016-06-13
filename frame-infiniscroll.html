@@ -1,0 +1,94 @@
+<html>
+<head><title>Frame</title>
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: green;
+
+}
+
+.container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 10px red solid;
+	min-height: 100%;
+	height: auto;
+
+	background: yellow;
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	overflow: scroll;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Frame!</h1>
+<div class="lazycontent">
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+<h2>Some content</h2>
+</div>
+<div class="infini-marker">Loading more...</div>
+</div>
+<script>
+window.lazycontent = document.querySelector('.lazycontent');
+window.container = document.querySelector('.container');
+window.loadingTimeout = undefined;
+
+var loadMore = function() {
+	var html = "<h2>lazy loaded content</h2>";
+	lazycontent.innerHTML = lazycontent.innerHTML + html + html + html + html + html;
+	window.loadingTimeout = undefined;
+}
+function isScrolledIntoView(el) {
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+}
+window.infinimarker = document.querySelector('.infini-marker');
+container.addEventListener('scroll', function(e) {
+		console.log(e);
+		if (isScrolledIntoView(infinimarker) && !window.loadingTimeout) {
+			window.loadingTimeout = setTimeout(loadMore, 1000);
+		}
+	});
+</script>
+</body>
