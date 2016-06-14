@@ -22,6 +22,6 @@ This code solves issues mentioned above and works almost identically for followi
 
 ## Demos
 
-* [Fullscreen iframe overlay with position: fixed + defined iframe's height](01-fullscreen.html)
-* [Fullscreen iframe overlay with position: fixed + undefined iframe's height](02-fullscreen-no-height.html)
-* [Fullscreen iframe overlay with position: fixed + infinite scroll](03-infiniscroll.html)
+* [Fullscreen iframe overlay with position: fixed + defined iframe's height](https://rawgit.com/zdanowiczkonrad/iframe-fixed/master/01-fullscreen.html)
+* [Fullscreen iframe overlay with position: fixed + undefined iframe's height](https://rawgit.com/zdanowiczkonrad/iframe-fixed/master//02-fullscreen-no-height.html)
+* [Fullscreen iframe overlay with position: fixed + infinite scroll](https://rawgit.com/zdanowiczkonrad/iframe-fixed/master/03-infiniscroll.html)
