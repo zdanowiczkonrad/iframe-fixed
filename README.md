@@ -13,14 +13,14 @@ This code solves issues mentioned above and works almost identically for followi
 	* Chrome 51.0.2704.84
 	* Firefox 47.0
 	* Safari 9.1 (11601.5.17.1)
+	* MS Edge (25.10586.0.0)
+	* IE 11 (11.0.31) 
 
 ### Mobile
 
 	* iOS Safari 9.3 (13E230)
 	* Chrome 50.0.266.89
 
-
-_(No IE yet)_
 
 ## Demos
 
