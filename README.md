@@ -4,7 +4,6 @@ This demo includes cross-browser samples of `iframe` elements that have `positio
 
 For most browser this is a no-brainer, but iOS Safari does not simply render iframe's overflow - it renders iframe's overflow as `visible` without possibility to change it and the scroll events are bubbled under the iframe, to the document body usually, which is something you usually don't desire.
 
-
 ## Compatibility
 This code solves issues mentioned above and works almost identically for following browsers:
 
@@ -21,10 +20,8 @@ This code solves issues mentioned above and works almost identically for followi
 * iOS Safari 9.3 (13E230)
 * Chrome 50.0.266.89
 
-
 ## Demos
 
 * [Fullscreen iframe overlay with position: fixed + defined iframe's height](01-fullscreen.html)
 * [Fullscreen iframe overlay with position: fixed + undefined iframe's height](02-fullscreen-no-height.html)
 * [Fullscreen iframe overlay with position: fixed + infinite scroll](03-infiniscroll.html)
-
