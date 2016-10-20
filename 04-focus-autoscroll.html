@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+body, html {
+	position: relative;
+	overflow: auto; 
+	-comment: "Removing overflow auto will enable the bug with field focus when inside an iframe";
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body.noscroll {
+	overflow: hidden;
+}
+
+.widget-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	overflow: auto;
+ 	height: 100%;
+ 	-webkit-overflow-scrolling: touch;
+}
+
+.iframe-wrapper {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling:touch;
+	overflow-y: scroll;
+}
+
+iframe {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100%;
+	opacity: 0.9;
+	height: auto;
+	min-height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+h1 {
+	margin: 30px;
+	color: blue;
+}
+</style>
+</head>
+<body class="noscroll">
+<div class="widget-wrapper">
+<div class="iframe-wrapper">
+	<iframe src="frame-100percent-with-child.html"></iframe>
+</div>
+</div>
+
+<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet nibh ac enim interdum auctor. Nulla finibus convallis neque a volutpat. Curabitur vitae lorem at eros rhoncus feugiat non eget turpis. Vivamus nisi massa, rhoncus sit amet libero mattis, tincidunt pretium diam. Vestibulum vitae sodales orci. Etiam mattis non nibh consectetur sollicitudin. Pellentesque dictum, odio sit amet feugiat auctor, ipsum dui gravida purus, a convallis metus nibh dictum nisi. Aliquam lectus risus, mollis facilisis fringilla nec, ultricies quis libero. Aliquam nec fermentum eros.
+
+Cras urna orci, sodales sed cursus at, gravida quis mi. Donec blandit metus ac dolor pellentesque, sed dictum mauris efficitur. Ut fringilla, eros molestie ultricies fringilla, ex nisi pharetra augue, in lobortis diam purus malesuada lectus. Morbi vitae blandit massa, at sollicitudin ligula. Curabitur tincidunt et elit in rhoncus. In vel risus ac enim feugiat semper a vitae quam. Sed aliquam eleifend nulla, eget congue eros venenatis quis. Phasellus fringilla luctus justo non tincidunt. Suspendisse quis mi posuere, lobortis enim in, malesuada odio. Fusce faucibus, sem ut ultrices commodo, est erat malesuada nibh, in hendrerit sem est id quam. Phasellus feugiat luctus diam vitae consectetur.
+
+Phasellus leo tellus, finibus et nibh sed, tempus condimentum dolor. Praesent vehicula nulla at interdum venenatis. Maecenas tristique elementum iaculis. Quisque condimentum ultricies leo, vitae facilisis justo finibus vitae. Sed auctor fringilla libero quis tempus. Nulla at tortor quis leo fringilla consequat non et erat. Duis semper lorem erat, sit amet mollis arcu dignissim sed. Phasellus congue ex a purus sodales pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Sed facilisis luctus nulla, sit amet ullamcorper ipsum accumsan ac. Donec tincidunt gravida mi in euismod. Aliquam lacus dui, blandit eu mi ac, dictum gravida neque. Phasellus sit amet leo nec libero euismod feugiat. Donec elementum dui ut dui tempus dictum. Fusce libero leo, finibus vel ipsum non, porta cursus dui. Curabitur imperdiet purus non metus facilisis sagittis. Sed non dui orci. Curabitur condimentum urna a mauris vulputate tristique.
+
+Suspendisse lobortis felis metus. Cras ac fringilla quam. Sed eu cursus lacus. Nunc volutpat, mi eget congue vulputate, lectus leo tincidunt magna, sed aliquet urna ex nec nisi. Phasellus vitae dignissim augue. Aliquam sollicitudin iaculis commodo. Donec malesuada tellus elit, sed egestas diam pellentesque sit amet. Sed finibus mi ac lorem lobortis, eu eleifend nibh sagittis. Sed fermentum purus a ornare vestibulum. Donec et lacinia ante. Vestibulum suscipit, enim sed maximus fringilla, libero nunc scelerisque metus, at posuere felis purus non felis. Donec ac aliquet tortor, quis fringilla sem. Curabitur non magna viverra dolor commodo interdum sed ut nulla. Aenean viverra tincidunt felis at fermentum. Maecenas pharetra arcu sed urna eleifend porta. Donec ornare lorem interdum elit aliquam sagittis.</h1>
+
+
+</body>
+</html>
